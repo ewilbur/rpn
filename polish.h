@@ -14,6 +14,7 @@ class Polish {
     bool isNumber(char);
   public:
      Polish(char*);
+     ~Polish();
      double solve();
 };
 

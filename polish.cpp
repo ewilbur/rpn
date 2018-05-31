@@ -28,6 +28,14 @@ Polish::Polish(char *xs) {
   }
 }
 
+Polish::~Polish() {
+  while (polish.size() > 0) {
+    delete[] polish.back();
+    polish.pop_back();
+  }
+}
+
+
 double Polish::solve() {
   vector<double> polNumbers;
   vector<char*> tmpPolish = polish;
